@@ -1,0 +1,378 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "docon assistant",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HelloWorldIntent",
+                    "slots": [],
+                    "samples": [
+                        "olá",
+                        "como vai você",
+                        "diga oi mundo",
+                        "diga oi",
+                        "oi",
+                        "diga olá mundo",
+                        "diga olá"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "HorariodeAtendimento",
+                    "slots": [
+                        {
+                            "name": "atendimentoSlot",
+                            "type": "atendimento"
+                        }
+                    ],
+                    "samples": [
+                        "Atendimento",
+                        "Tem expediente à noite",
+                        "Sábado é até que horas",
+                        "Abre aos domingos",
+                        "Vocês trabalham aos finais de semana",
+                        "Funciona no feriado",
+                        "Vocês abrem todos os dias",
+                        "Funciona vinte e quatro horas",
+                        "Que horas fecha",
+                        "Vocês abrem que horas",
+                        "Qual o horário de funcionamento"
+                    ]
+                },
+                {
+                    "name": "FormasdePagamentos",
+                    "slots": [],
+                    "samples": [
+                        "Posso pagar no débito",
+                        "Posso pagar em dinheiro",
+                        "Aceita crediário",
+                        "Qual o custo do parcelamento",
+                        "Posso parcelar",
+                        "Como posso pagar",
+                        "Aceita cartão",
+                        "Tipos de pagamento",
+                        "Crediário",
+                        "Débito",
+                        "Crédito",
+                        "Pagamentos",
+                        "Pagamento",
+                        "Posso usar cartão pré-pago",
+                        "Cobrança antes do esperado",
+                        "Como atualizar meus dados de Pagamento",
+                        "Posso pagar uma entrada no débito e parcelar o restante",
+                        "Como faço para antecipar as parcelas",
+                        "Como conseguir segunda via do boleto",
+                        "É possível alterar a data de vencimento do boleto",
+                        "Boleto sendo gerado com a data de vencimento errada",
+                        "Boleto sendo gerado com informações erradas",
+                        "Aceita dividir em mais de um cartão",
+                        "Aceita cartão de crédito",
+                        "Cancelar cobrança",
+                        "Foi cobrado um valor errado no meu cartão",
+                        "Foi cobrado um valor indevido no meu cartão",
+                        "Vocês facilitam os pagamentos",
+                        "Cobra juros ao parcelar",
+                        "Quais cartões são aceitos",
+                        "Aceita quantas parcelas",
+                        "Quais são as formas de pagamento"
+                    ]
+                },
+                {
+                    "name": "CanaisdeComunicacao",
+                    "slots": [
+                        {
+                            "name": "contatoSlot",
+                            "type": "contato"
+                        }
+                    ],
+                    "samples": [
+                        "Comunicação",
+                        "Contato",
+                        "Como eu encontro vocês",
+                        "Existe algum telefone de contato",
+                        "Onde posso tirar dúvidas",
+                        "Como eu falo com vocês",
+                        "Vocês atendem pelo whatsapp",
+                        "Quais são os números de telefone que posso ligar",
+                        "Vocês têm endereço",
+                        "Tem algum telefone disponível",
+                        "Como eu entro em contato",
+                        "Qual email de vocês"
+                    ]
+                },
+                {
+                    "name": "Servicos",
+                    "slots": [],
+                    "samples": [
+                        "Sou despachante posso trabalhar com vocês",
+                        "Vocês oferecem sistema de parcerias",
+                        "Vocês fazem pagamento de IPVA",
+                        "O que posso esperar de vocês",
+                        "Portfólio de serviços",
+                        "O que vocês fazem",
+                        "Quero fazer transferência de veículos",
+                        "Posso emitir um documento",
+                        "Serviços",
+                        "Quais serviços vocês oferecem"
+                    ]
+                },
+                {
+                    "name": "Prazos",
+                    "slots": [],
+                    "samples": [
+                        "Prazo está como finalizado porém não recebi o documento",
+                        "Meu status está incorreto",
+                        "Onde fica o status de cada serviço",
+                        "Onde posso acompanhar os prazos",
+                        "Demora pra ficar pronto",
+                        "Vocês demoram quanto tempo para finalizar o serviço",
+                        "Fica pronto hoje",
+                        "Vocês conseguem me entregar na semana que vem",
+                        "O que ocorre se passar do prazo",
+                        "Os prazos de cada serviço variam",
+                        "Prazos",
+                        "Qual o prazo de cada serviço"
+                    ]
+                },
+                {
+                    "name": "Custos",
+                    "slots": [
+                        {
+                            "name": "custosSlot",
+                            "type": "custos"
+                        },
+                        {
+                            "name": "pagamentoSlot",
+                            "type": "pagamento"
+                        }
+                    ],
+                    "samples": [
+                        "Quais são os planos",
+                        "Vocês trabalham com planos de valores para despachantes",
+                        "Quanto eu pago para utilizar os serviços",
+                        "Qual o valor para emitir um novo documento",
+                        "Quanto sai para transferir um carro",
+                        "Quanto fica pra quitar minhas multas",
+                        "Valor de cada serviço",
+                        "Quais são os custos",
+                        "Custos",
+                        "Valores"
+                    ]
+                },
+                {
+                    "name": "TransferenciadeVeiculos",
+                    "slots": [],
+                    "samples": [
+                        "Posso transferir um veículo de outro estado",
+                        "Comprei um veículo do mesmo município onde moro como transfiro",
+                        "Sou de outro município como transferir o veículo",
+                        "Comprei um veículo de outro estado como faço",
+                        "Vocês transferem veículos",
+                        "Vocês realizam transferência de propriedade de veículos",
+                        "Qual a documentação para Transferência de veículos",
+                        "Qual a finalidade da Transferência de veículos",
+                        "O que é Transferência de veículos",
+                        "Transferência de veículos"
+                    ]
+                },
+                {
+                    "name": "RegistrodeVeiculosZeroKm",
+                    "slots": [],
+                    "samples": [
+                        "Vocês emitem documentos de veículos novos",
+                        "Emitir documento",
+                        "Como emito o primeiro documento do meu veículo",
+                        "Consigo emitir a documentação através do site",
+                        "Comprei um carro novo e agora",
+                        "Vocês registram veículos zero Km",
+                        "Qual a documentação para registrar um veículo zero Km",
+                        "Porque devo registrar um veículo zero Km",
+                        "Como registrar um veículo zero Km",
+                        "O que é Veículo zero Km"
+                    ]
+                },
+                {
+                    "name": "PagamentodeDebitos",
+                    "slots": [],
+                    "samples": [
+                        "Como pago os débitos do meu veículo",
+                        "Posso fazer o licenciamento com vocês",
+                        "Consigo pagar meu IPVA pela plataforma",
+                        "Posso pagar minhas multas",
+                        "Débitos",
+                        "Quais as documentações para pagar os débitos do meu veículo",
+                        "Posso ser multado se não pagar os débitos do meu veículo",
+                        "O que ocorre se eu não pagar os débitos do meu veículo",
+                        "Porque devo pagar os débitos do meu veículo",
+                        "O que são débitos"
+                    ]
+                },
+                {
+                    "name": "Seguranca",
+                    "slots": [
+                        {
+                            "name": "segurancaSlot",
+                            "type": "seguranca"
+                        }
+                    ],
+                    "samples": [
+                        "Vocês vendem minhas informações",
+                        "Como vocês compartilham minhas informações",
+                        "Como faço para excluir minha conta",
+                        "Como manter minha conta segura",
+                        "Como interromper determinados tipos de utilização das suas informações pessoais",
+                        "O que é o Regulamento Geral de Proteção de Dados",
+                        "Que dados pessoais a DocOn guarda a seu respeito e como obter uma cópia desses dados",
+                        "Como acessar e atualizar suas informações pessoais",
+                        "Exclusão remoção e retenção de informações",
+                        "Acessos indevidos",
+                        "Acho que alguém acessou minha conta",
+                        "Quem pode ver meus dados",
+                        "Segurança",
+                        "Quais protocolos de segurança vocês possuem",
+                        "Como vocês tratam segurança",
+                        "Meus dados estão seguros"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "atendimento",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "atendimento",
+                                "synonyms": [
+                                    "meio de contato",
+                                    "canais de atendimento",
+                                    "comunicação"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "contato",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "WhatsApp",
+                                "synonyms": [
+                                    "whats",
+                                    "wpp"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "telefone",
+                                "synonyms": [
+                                    "fone",
+                                    "celular",
+                                    "phone"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E-mail",
+                                "synonyms": [
+                                    "mail",
+                                    "email"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "custos",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "valores",
+                                "synonyms": [
+                                    "price",
+                                    "preço",
+                                    "valor"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "pagamento",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dinheiro",
+                                "synonyms": [
+                                    "boleto"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "debito",
+                                "synonyms": [
+                                    "maestro",
+                                    "electron"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "credito",
+                                "synonyms": [
+                                    "amex",
+                                    "dinners",
+                                    "hipercard",
+                                    "mastercard",
+                                    "visa",
+                                    "master"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seguranca",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "dados",
+                                "synonyms": [
+                                    "informações pessoais",
+                                    "informações"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "confidencial",
+                                "synonyms": [
+                                    "confidencialidade",
+                                    "seguro"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
